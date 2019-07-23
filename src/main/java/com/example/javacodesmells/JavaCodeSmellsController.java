@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 // controller comment
-@Controller("value")
 // responsebody comment
-@ResponseBody
+// responsebody comment
+@RestController
 public class JavaCodeSmellsController {
     @RequestMapping("/greet") // Noncompliant (source: sonarqube)
     public String greet(String greetee) {
