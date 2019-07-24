@@ -10,7 +10,7 @@ public class JavaCodeSmellsController {
     
     final private static String GREETING = "Howdy!";
     
-    @RequestMapping("/greet") // Noncompliant (source: sonarqube)
+    @RequestMapping("/greet")
     public String greet(String greetee) {
         return GREETING;
     }
